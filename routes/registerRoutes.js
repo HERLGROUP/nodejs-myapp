@@ -4,7 +4,7 @@ const User = require('../models/userModel');
 const path = require('path');
 const permissions = require('../permissions')
 
-router.get('/myapp', (req, res) => {
+router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../views', 'index.html'));
 })
 
